@@ -70,6 +70,13 @@ EdiOrderConfirmUI_left <- function() {
 EdiOrderConfirmUI_right <- function() {
   res <- tagList(
 
+    tsui::mdl_text2(id = 'text_EdiOrderConfirm_FBillNO_view',label ='输入订单号' ,value ='4500447949' ),
+    tsui::mdl_text2(id = 'text_EdiOrderConfirm_FSeq_view',label ='输入订单行号' ,value ='1' ),
+    shiny::actionButton(inputId = 'btn_EdiOrderConfirm_view',label = '查询'),
+    tsui::mdl_download_button(id = 'dl_EdiOrderConfirm',label = '下载查询记录到EXCEL'),
+
+    shiny::actionButton(inputId = 'btn_EdiOrderConfirm_sync',label = '同步数据到ERP'),
+
 
 
   )
