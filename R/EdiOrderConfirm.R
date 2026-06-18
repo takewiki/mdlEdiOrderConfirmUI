@@ -43,14 +43,15 @@ EdiOrderConfirmUI_left <- function() {
 
   res <- tagList(
 
-    tsui::mdl_text2(id = 'text_EdiOrderConfirm_FBillNO',label ='输入订单号' ,value ='4500447949' ),
+    tsui::mdl_text2(id = 'text_EdiOrderConfirm_FBillNO',label ='输入订单号' ,value ='4500556527' ),
     tsui::mdl_text2(id = 'text_EdiOrderConfirm_FSeq',label ='输入订单行号' ,value ='1' ),
 
     tsui::mdl_text2(id = 'text_EdiOrderConfirm_FCommittedQuantity',label ='输入确认数量' ,value ='' ),
 
-    tsui::mdl_text2(id = 'text_EdiOrderConfirm_FCommittedQuantityUOM',label ='输入确认数量单位' ,value ='' ),
+    tsui::mdl_text2(id = 'text_EdiOrderConfirm_FCommittedQuantityUOM',label ='输入确认数量单位' ,value ='KGM' ),
 
-    tsui::mdl_text2(id = 'text_EdiOrderConfirm_FCommittedQuantityConfirmedDate',label ='输入确认交期' ,value ='' ),
+    tsui::mdl_text2(id = 'text_EdiOrderConfirm_FCommittedQuantityConfirmedDate',label ='输入确认交期' ,value ='20260805' ),
+    tsui::mdl_text2(id = 'text_EdiOrderConfirm_FErpDeliveryDate',label ='输入到货日期' ,value ='20260805' ),
 
     shiny::actionButton(inputId = 'btn_EdiOrderConfirm_update',label = '更新订单信息')
 
@@ -70,12 +71,13 @@ EdiOrderConfirmUI_left <- function() {
 EdiOrderConfirmUI_right <- function() {
   res <- tagList(
 
-    tsui::mdl_text2(id = 'text_EdiOrderConfirm_FBillNO_view',label ='输入订单号' ,value ='4500447949' ),
+    tsui::mdl_text2(id = 'text_EdiOrderConfirm_FBillNO_view',label ='输入订单号' ,value ='4500556527' ),
     tsui::mdl_text2(id = 'text_EdiOrderConfirm_FSeq_view',label ='输入订单行号' ,value ='1' ),
     shiny::actionButton(inputId = 'btn_EdiOrderConfirm_view',label = '查询'),
     tsui::mdl_download_button(id = 'dl_EdiOrderConfirm',label = '下载查询记录到EXCEL'),
+    tsui::mdl_text2(id = 'text_EdiOrderConfirm_FBillNO_sync',label ='输入订单号' ,value ='4500556527' ),
 
-    shiny::actionButton(inputId = 'btn_EdiOrderConfirm_sync',label = '同步数据到ERP'),
+    shiny::actionButton(inputId = 'btn_EdiOrderConfirm_sync',label = '按订单号同步数据到ERP'),
 
 
 
