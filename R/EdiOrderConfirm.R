@@ -79,6 +79,7 @@ EdiOrderConfirmUI_right <- function() {
 
     shiny::actionButton(inputId = 'btn_EdiOrderConfirm_sync',label = '按订单号同步数据到ERP'),
     tsui::mdl_text2(id = 'text_EdiOrderConfirm_FBillNO_delete',label ='需删除订单号' ,value ='' ),
+    tsui::mdl_text2(id = 'text_EdiOrderConfirm_FDate_delete',label ='需删除报文日期' ,value ='20260630' ),
     shiny::actionButton(inputId = 'btn_EdiOrderConfirm_delete',label = '删除订单'),
 
 
