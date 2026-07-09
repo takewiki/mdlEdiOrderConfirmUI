@@ -49,9 +49,10 @@ EdiOrderConfirmUI_left <- function() {
     tsui::mdl_text2(id = 'text_EdiOrderConfirm_FCommittedQuantity',label ='确认数量' ,value ='' ),
 
     tsui::mdl_text2(id = 'text_EdiOrderConfirm_FCommittedQuantityUOM',label ='确认数量单位' ,value ='KGM' ),
+    tsui::mdl_text2(id = 'text_EdiOrderConfirm_FErpDeliveryDate',label ='工厂做箱日期' ,value ='20260805' ),
 
-    tsui::mdl_text2(id = 'text_EdiOrderConfirm_FCommittedQuantityConfirmedDate',label ='工厂做箱日期' ,value ='20260805' ),
-    tsui::mdl_text2(id = 'text_EdiOrderConfirm_FErpDeliveryDate',label ='到港日期' ,value ='20260805' ),
+    tsui::mdl_text2(id = 'text_EdiOrderConfirm_FCommittedQuantityConfirmedDate',label ='到港日期' ,value ='20260805' ),
+
 
 
     shiny::actionButton(inputId = 'btn_EdiOrderConfirm_update',label = '更新订单信息')
